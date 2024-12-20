@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Aadira Das - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
@@ -25,6 +25,9 @@
             <a href="#about"><i class="fas fa-user"></i><span>About</span></a>
           </li>
           <li>
+            <a href="#skills"><i class="fas fa-cogs"></i><span>Skills</span></a>
+          </li>
+          <li>
             <a href="#portfolio"
               ><i class="fas fa-briefcase"></i><span>Portfolio</span></a
             >
@@ -39,21 +42,54 @@
     </header>
 
     <main>
+      <!-- Home Section -->
       <section id="home">
         <div class="content">
           <h1>Welcome to My Portfolio</h1>
-          <p class="typing-text"></p>
+          <p class="typing-text">
+            Aspiring Developer seeking internship opportunities
+          </p>
         </div>
       </section>
 
+      <!-- About Me Section -->
       <section id="about">
         <div class="content">
           <h2>About Me</h2>
-          <p>My name is Aadira Das</p>
-          <button>Resume</button>
+          <p>
+            Hi, I'm Aadira Das, a passionate developer with a keen interest in
+            web and development and ui/ux design. I am currently looking for
+            internship opportunities to apply my skills in a practical
+            environment and learn from industry professionals.
+          </p>
+          <a href="pdf/Resume.pdf" target=""
+            ><button>Download Resume</button></a
+          >
+          <a
+            href="https://www.linkedin.com/in/aadira-das-784417298/"
+            target="_blank"
+            ><button>LinkedIn Profile</button></a
+          >
         </div>
       </section>
 
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="content">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML, CSS, JavaScript, Python</li>
+            <li>Adobe Premiere Pro, Illustrator, InDesign</li>
+            <li>Microsoft</li>
+            <li>Figma, Axure</li>
+            <li>Flutter</li>
+            <li>Git, GitHub, Version Control</li>
+            <li>Problem-solving and Analytical Thinking</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
       <section id="portfolio">
         <div class="content">
           <h2>My Work</h2>
@@ -66,7 +102,13 @@
                 /></span>
               </a>
               <h3>Project 1</h3>
-              <p>description</p>
+              <p>
+                Developed a responsive web application using React.js to manage
+                tasks efficiently.
+              </p>
+              <p>
+                <strong>Technologies Used:</strong> React.js, JavaScript, CSS
+              </p>
             </div>
             <div class="portfolio-item">
               <a href="project2.jpg" data-lightbox="portfolio">
@@ -76,15 +118,26 @@
                 /></span>
               </a>
               <h3>Project 2</h3>
-              <p>description</p>
+              <p>
+                Built a Python-based data analysis tool to interpret large
+                datasets for business insights.
+              </p>
+              <p>
+                <strong>Technologies Used:</strong> Python, Pandas, Matplotlib
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Contact Section -->
       <section id="contact">
         <div class="content">
           <h2>Contact Me</h2>
+          <p>
+            If you're interested in collaborating or have any internship
+            opportunities, please get in touch with me through the form below.
+          </p>
           <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
@@ -100,6 +153,7 @@
         </div>
       </section>
     </main>
+
     <button class="scroll-to-top" onclick="scrollToTop()">
       <i class="fas fa-arrow-up"></i>
     </button>
